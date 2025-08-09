@@ -1,4 +1,5 @@
 {
+  "name": "4976-education",
   "buildCommand": "expo export -p web",
   "outputDirectory": "dist",
   "devCommand": "expo start --web",
