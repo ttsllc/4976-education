@@ -1,0 +1,41 @@
+{
+  "cli": {
+    "version": ">= 12.12.1"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      }
+    },
+    "production": {
+      "ios": {
+        "buildNumber": "1",
+        "bundleIdentifier": "com.sankei.education"
+      },
+      "android": {
+        "buildType": "apk",
+        "versionCode": 1,
+        "applicationId": "com.sankei.education"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "your-apple-id@example.com",
+        "ascAppId": "your-app-store-connect-id",
+        "appleTeamId": "your-apple-team-id"
+      },
+      "android": {
+        "serviceAccountKeyPath": "./path-to-service-account-key.json",
+        "track": "production"
+      }
+    }
+  }
+}
